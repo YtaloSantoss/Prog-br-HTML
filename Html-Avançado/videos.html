@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            width: 640px;
+            height: 360px;
+        }
+        .video{
+            width: 100%;
+        }
+        .controle {
+            position: absolute;
+            top:0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .btn{
+            position:relative;
+            top:100%;
+            width: 35px;
+            margin: 10px;
+            padding: 10px;
+            transform: translateY(-150%);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <video id="video1" class="video" src="video/Pexels Videos 1443653.mp4"></video>
+
+        
+        <div class="controle">
+            <img class="btn" onclick="retroceder()" src="icons/esquerda.png" alt="voltar">
+            <img class="btn" onclick="avancar()" src="icons/direita.png" alt="avançar">
+            <img class="btn" onclick="diminuir_vel()" src="icons/volume-mais.png" alt="mais">
+            <img class="btn" onclick="aumentar_vel()" src="icons/volume-menos.png" alt="menos">
+            <img class="btn" onclick="play()" src="icons/play.png" alt="play">
+            <img class="btn" onclick="stopp()" src="icons/para.png" alt="parar">
+        </div>
+        
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
